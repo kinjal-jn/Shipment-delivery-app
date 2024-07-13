@@ -1,38 +1,124 @@
-/* Checkout.css */
 .checkout-container {
   text-align: center;
   margin-top: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.cart {
-  width: 300px;
-  margin: 0 auto;
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-home {
+  padding: 10px 50px;
+  background-color: #007bff;
+  color: white;
+  margin-right: 50px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-home:hover {
+  background-color: #0056b3;
+}
+
+.checkout-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'cursive';
+}
+
+.checkout-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex: 1;
+}
+
+.left-column, .right-column {
+  width: 45%;
   text-align: left;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.cart h3 {
+.partition {
+  width: 10px;
+}
+
+.phone-input {
+  display: flex;
+  gap: 10px;
+}
+
+.left-column input, .phone-input input, .phone-input select {
+  width: 100%;
+  padding: 7px;
   margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.cart ul {
-  list-style-type: none;
-  padding: 0;
+.right-column .section-title {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.cart li {
-  margin-bottom: 5px;
+.left-column .section-title {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.btn-order {
-  margin-top: 20px;
+.right-column p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn-order, .btn-save {
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.btn-order:hover {
-  opacity: 0.8;
+.btn-order:hover, .btn-save:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.required {
+  color: red;
 }

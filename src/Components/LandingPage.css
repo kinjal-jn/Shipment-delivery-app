@@ -1,107 +1,105 @@
 body {
-    background-color: #ffebf0; /* Light pink background */
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .landing-container {
-    text-align: center;
-    padding-top: 20px; /* Reduced padding */
-  }
-  
-  .top-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
-    padding: 10px;
-    z-index: 1000;
-  }
-  
-  .top-header h2 {
-    margin: 0;
-    color: white;
-    font-size: 1.5rem;
-    text-align: left;
-    padding-left: 20px;
-  }
-  
-  .header {
-    background-color: #f8f9fa;
-    padding: 1px; /* Reduced padding */
-    margin-top: 1px; /* Adjusted margin to reduce space */
-    border-radius: 10px;
-  }
-  
-  .header h1 {
-    font-size: 2rem; /* Reduced font size */
-    color: #343a40;
-  }
-  
-  .content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .image-container img {
-    max-width: 20%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .button-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: white; 
-    font-family: 'Comic Sans MS', cursive, sans-serif; 
-    color: #000;
-  }
+  background-color: #dec2c9 !important; /* Light pink background with !important */
+  font-family: 'Arial', sans-serif;
+}
 
-  .button-container p {
-    margin-top: 10px;
-    margin: 10px 0; /* Add some margin to the paragraphs for spacing */
-  }
+.landing-container {
+  text-align: center;
+  padding-top: 20px; /* Reduced padding */
+}
 
-  .button-container .btn {
-    margin: 10px;
-    padding: 15px 25px;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .button-container .btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .footer {
-    margin-top: 2px; /* Reduced margin */
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  .footer p {
-    margin: 0;
-    color: #343a40;
-    font-size: 1rem;
-  }
-  
+.top-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.top-header h2 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.header {
+  background-color: #f4e2e7 !important;
+  padding: 1px; /* Reduced padding */
+  margin-top: 1px; /* Adjusted margin to reduce space */
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 2rem; /* Reduced font size */
+  color: #343a40;
+}
+
+.content-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #fdeae9 !important;
+  color: #000;
+}
+
+.button-container p {
+  margin-top: 10px;
+  margin: 10px 0; /* Add some margin to the paragraphs for spacing */
+}
+
+.button-container .btn {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-container .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 2px; /* Reduced margin */
+  background-color: #f4e2e7 !important;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer p {
+  margin: 0;
+  color: #343a40;
+  font-size: 1rem;
+}

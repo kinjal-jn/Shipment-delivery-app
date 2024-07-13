@@ -31,12 +31,16 @@ function Home() {
     navigate('/');
   };
 
+  const goToCheckout = () => {
+    navigate('/checkout', { state: { cart } });
+  };
+
   return (
     <div className="home-container">
       <header className="top-header">
         <h2>Shippeddd</h2>
         <div className="header-buttons">
-          <button onClick={() => navigate('/checkout')} className="btn-checkout">Checkout</button>
+          <button onClick={goToCheckout} className="btn-checkout">Checkout</button>
           <button onClick={handleLogout} className="btn-logout">Logout</button>
         </div>
       </header>
@@ -46,7 +50,7 @@ function Home() {
           <div key={product.id} className="product">
             <img src={`/${product.image}`} alt={product.name} />
             <h2>{product.name}</h2>
-            <p>${product.price}</p>
+            <p className="price">${product.price}</p>
             <button 
               onClick={() => addToCart(product)} 
               className="btn-add" 

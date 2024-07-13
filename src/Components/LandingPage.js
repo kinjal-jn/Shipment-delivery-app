@@ -16,9 +16,9 @@ function LandingPage() {
           <img src="/landing.jpg" alt="Landing" />
         </div>
         <div className="button-container">
-        <p>Already an User??</p>
+        <h4>Already an User?</h4>
           <Link to="/login" className="btn">Login</Link>
-          <p>NEW User??</p>
+          <h4>NEW User??</h4>
           <Link to="/register" className="btn">Register</Link>
         </div>
       </div>

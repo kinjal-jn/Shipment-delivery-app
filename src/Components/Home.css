@@ -20,32 +20,48 @@
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .product {
   border: 1px solid #ddd;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
   width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product h2 {
   margin-top: 10px;
+  color: #333;
 }
 
 .product p {
   margin-top: 5px;
   font-size: 1.1em;
-  color: #333;
+  color: #666;
+}
+
+.product .price {
+  font-weight: bold;
 }
 
 .product .btn-add {
@@ -56,16 +72,16 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .product .btn-add:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 .btn-logout, .btn-checkout {
   padding: 10px 50px;
-  margin-right: 25px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -76,4 +92,9 @@
 
 .btn-logout:hover, .btn-checkout:hover {
   background-color: #0056b3;
+}
+
+h1 {
+  color: #333;
+  font-weight: bold;
 }
