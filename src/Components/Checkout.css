@@ -1,0 +1,38 @@
+/* Checkout.css */
+.checkout-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cart {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.cart h3 {
+  margin-bottom: 10px;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  margin-bottom: 5px;
+}
+
+.btn-order {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-order:hover {
+  opacity: 0.8;
+}

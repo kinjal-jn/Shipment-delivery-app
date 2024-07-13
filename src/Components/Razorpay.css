@@ -1,0 +1,19 @@
+/* Razorpay.css */
+.razorpay-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .btn-payment {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-payment:hover {
+    opacity: 0.8;
+  }
+  
